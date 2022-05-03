@@ -1,13 +1,11 @@
-import { FeedbackType, feedbackTypes } from "..";
-import { CloseButton } from "../../CloseButton";
+import { FeedbackType, feedbackTypes } from '..'
+import { CloseButton } from '../../CloseButton'
 
 type FeedbackTypeStepProps = {
-  onFeedbackTypeChanged: (type: FeedbackType) => void;
-};
+  onFeedbackTypeChanged: (type: FeedbackType) => void
+}
 
-export function FeedbackTypeStep({
-  onFeedbackTypeChanged,
-}: FeedbackTypeStepProps) {
+export function FeedbackTypeStep({ onFeedbackTypeChanged }: FeedbackTypeStepProps) {
   return (
     <>
       <header>
@@ -26,9 +24,9 @@ export function FeedbackTypeStep({
               <img src={value.image.source} alt={value.image.alt} />
               <span>{value.title}</span>
             </button>
-          );
+          )
         })}
       </div>
     </>
-  );
+  )
 }
